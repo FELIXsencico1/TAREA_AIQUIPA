@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 1000px;
+            background: url('IMAGEN/nav.JPG') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+
+            
+        }
+        .buscar {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+
+        img {
+            width: 80%; /* Ajusta el tamaño de la imagen según sea necesario */
+            max-width: 600px;
+        }
+
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco para mejor legibilidad */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>MUNICIPALIDAD DE MIRAFLORES</h1>
+        <img src="IMAGEN/logo.png" alt="Logo de la municipalidad">
+        <article>
+            <p>Miraflores es uno de los distritos más conocidos y prósperos de la ciudad de Lima, la capital de Perú. Es un distrito ubicado en la costa del océano Pacífico y se caracteriza por ser una zona turística, comercial y residencial.</p>
+        </article>
+        <br>
+        <div id="buscar">
+            <input type="text" id="search-box" placeholder="Buscar...">
+            <button id="search-button">Buscar</button>
+        </div>
+    </nav>
+</body>
+</html>
