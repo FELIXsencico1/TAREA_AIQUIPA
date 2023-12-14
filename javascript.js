@@ -14,15 +14,32 @@ function cliente() {
 }
 
 
-function mostrarSaludo(nombre) {
-    
-    var mensaje = "Hola, " + nombre + "! Bienvenido a nuestra página.";
-    
+
+
+///////////////////////
+var nombres = ["Juan", "María", "Carlos", "Ana", "Pedro"];
+
+
+function mostrarNombres() {
    
-    alert(mensaje);
+    var contenedor = document.body;
+
+    
+    var lista = document.createElement('ul');
+
+    
+    for (var i = 0; i < nombres.length; i++) {
+        
+        var elementoLista = document.createElement('li');
+        elementoLista.textContent = nombres[i];
+
+        
+        lista.hi(elementoLista);
+    }
+
+    
+    contenedor.hi(lista);
 }
 
 
-window.onload = function() {
-    obtenerNombre();
-};
+mostrarNombres();
